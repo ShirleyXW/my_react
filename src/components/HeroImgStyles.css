@@ -1,0 +1,67 @@
+.mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.into-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.mask::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+}
+
+.hero .hero-content {
+    position: absolute;
+    /* move an element from its current position
+     by 50% of its own width to the left and 50% of its own height upward.  */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.hero .hero-content h1 {
+    font-size: 4rem;
+    /* top, left, bottom */
+    padding: 0.6rem 0 1.5rem;
+}
+
+.hero .hero-content p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+/* apply on 'btn' class who is children of 'hero-content' */
+.hero-content .btn {
+    margin: 1rem 0.2rem;
+}
+
+@media screen and (max-width: 1040px) {
+    .hero .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero .hero-content p {
+        font-size: 1.4rem;
+    }
+
+}

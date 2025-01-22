@@ -9,7 +9,7 @@ import Project from './routes/project';
 function App() {
   return (
     <>
-  
+  {/* used to define all the routes for your application. */}
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
